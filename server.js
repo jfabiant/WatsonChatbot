@@ -1,6 +1,3 @@
-var express = require('express');
-var app = express();
-
 var prompt = require('prompt-sync')();
 var AssistantV1 = require('watson-developer-cloud/assistant/v1');
 
@@ -43,5 +40,3 @@ service.message({
       }, processResponse)
     }
 }
-
-app.listen(3000);
